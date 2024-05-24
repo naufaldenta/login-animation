@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+.login-form {
+    margin-top: 5em;
+    background-color: black;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px black;
+    border: 1px solid black;
+    
+
+}
+.login-form .title h1 {
+    color: white;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+}
+.username input, .password input {
+    border: 1px solid cyan;
+    margin: 10px;
+    padding: 18px 20px;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    text-align: center;
+}
+.username input::placeholder, .password input::placeholder {
+    color: white;
+}
+.button button {
+    margin-top: 15px;
+    padding: 15px 3.8em;
+    border-radius: 30px;
+    border: 1px solid green;
+    background: transparent;
+    color: white;
+}
+.button button:hover {
+    border-color: green;
+    border: 2px solid green;
+    transition: .2s ease-in;
+    animation-name: button;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.user, .pass {
+    text-align: center;
+    border: 2px solid cyan;
+    margin: 1rem;
+    color: white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 15rem;
+    font-size: 1.2rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+.user:focus,
+.pass:focus {
+    width: 17rem;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+
+    0% {
+        color: aliceblue;
+        border-color: aliceblue;
+    }
+    10% {
+        color: antiquewhite;
+        border-color: antiquewhite;
+    }
+    15% {
+        color: aqua;
+        border-color: aqua;
+    }
+    20% {
+        color: aquamarine;
+        border-color: aquamarine;
+    }
+    25% {
+        color: azure;
+        border-color: azure;
+    }
+    30% {
+        color: beige;
+        border-color: beige;
+    }
+    35% {
+        color: bisque;
+        border-color: bisque;
+    }
+    40% {
+        color:black;
+        border-color: black;
+    }
+    45% {
+        color: blue;
+        border-color: blue;
+    }
+    50% {
+        color: blueviolet;
+        border-color: blueviolet;
+    }
+    55% {
+        color: brown;
+        border-color: brown;
+    }
+    60% {
+        color: burlywood;
+        border-color: burlywood;
+    }
+    65% {
+        color: yellow;
+        border-color: yellow;
+    }
+    70% {
+        color: yellowgreen;
+        border-color: yellowgreen;
+    }
+    75% {
+        color:violet;
+        border-color: violet;
+    }
+    80% {
+        color: tomato;
+        border-color: tomato;
+    }
+    85% {
+        color: teal;
+        border-color: teal;
+    }
+    90% {
+        color: chartreuse;
+        border-color: chartreuse;
+    }
+    95% {
+        color: springgreen;
+        border-color: springgreen;
+    }
+    100% {
+        color: cornflowerblue;
+        border-color: cornflowerblue;
+    }
+}
+@keyframes button {
+    0% {
+        border-color: green;
+    }
+    50% {
+        border-color: rgb(46, 252, 0);
+    }
+    100% {
+        border-color: rgb(0, 190, 0);
+    }
+}
